@@ -151,8 +151,7 @@ elif "email" in text2:
         print("Listening...")
         audio = r.listen(source)
         message = r.recognize_google(audio)
-    sender_email = "vandanagm@gmail.com"  # Replace with your email
-    sender_password = "vandanagm@1205"  # Replace with your email password
+     # Replace with your email password
     result = send_email(sender_email, sender_password, recipient_email, subject, message)
     speak(result)
 
